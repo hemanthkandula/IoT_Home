@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:balloonberry="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/action_log_out"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Log Out"
+        balloonberry:showAsAction="never" />
+
+    <item android:id="@+id/action_exit"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Exit"
+        balloonberry:showAsAction="never" />
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hemanthkandula.app.myhome.HomeActivity">
+
+    <Switch
+        android:text="Door"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="67dp"
+        android:id="@+id/door" />
+
+    <Switch
+        android:text="Window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="162dp"
+        android:id="@+id/window"
+        android:layout_below="@+id/light"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
+
+    <Switch
+        android:text="light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/light"
+        android:layout_below="@+id/door"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="53dp"
+        android:layout_marginEnd="53dp" />
+
+    <Switch
+        android:text="fan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fan"
+        android:layout_above="@+id/light"
+        android:layout_toLeftOf="@+id/light"
+        android:layout_toStartOf="@+id/light" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sync"
+        android:id="@+id/sens"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/door"
+        android:layout_toEndOf="@+id/door"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="52dp" />
+</RelativeLayout>
